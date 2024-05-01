@@ -1,0 +1,266 @@
+@layer defaults.baseof            { 
+
+
+:root {
+    --max-width: auto;
+
+    --menu-head-hight: calc(var(--main-font-size) * 5);
+}
+
+
+/*
+  ========================================
+  Utilities
+  ========================================
+*/
+
+.m-hidden {
+    display: none !important;
+}
+
+
+/*
+  ========================================
+  Defaults
+  ========================================
+*/
+
+
+header {
+    /*height: 50vh;*/
+}
+
+
+
+
+:root {
+   --text-content-margin-left: 0.8ch;
+   --text-content-margin-right: 0.8ch;
+}
+
+
+
+
+
+
+/*
+  ========================================
+  Utilities
+  ========================================
+*/
+
+
+/*
+  ========================================
+  Defaults
+  ========================================
+*/
+
+
+header {
+    /*min-height: 60vh;*/
+    /*min-height: 70vh;*/
+
+    padding-left: 1em;
+    padding-right: 1em;
+}
+ }
+
+
+
+
+@layer components.baseof          { 
+
+
+
+
+
+
+
+
+ }
+
+@layer side-nav.baseof            { 
+
+
+nav.side-nav {
+    height: 68px;
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+ }
+@layer primary-menu.baseof        { 
+
+
+
+
+
+
+
+
+
+nav.primary-nav .zippy .zippy-overflow {
+    top:            0           !important;
+}
+
+nav.primary-nav .zippy .zippy-content {
+    padding-top:    var(--menu-head-hight);        !important;
+}
+
+ }
+@layer burger.baseof              { 
+
+
+.burger {
+    height: 68px;
+/*    padding-right: 50px;*/
+}
+.burger > button {
+    background-image: url("/assets/icons/menu_svg.svg");
+    background-position: center;
+    background-size: 80%;
+    background-repeat: no-repeat;
+}
+.burger.burger-on-menu > button {
+    /*background: url("/assets/icons/menu_svg.svg") center/80% no-repeat;*/
+}
+
+
+
+
+
+
+
+
+
+ }
+@layer roll-paper.baseof          { 
+
+
+
+
+
+div:has(> .roll-paper) {
+    display:        block;
+}
+
+
+
+
+
+
+
+ }
+@layer aheader.baseof             { 
+
+
+
+
+
+
+
+
+
+ }
+@layer article.baseof             { 
+
+
+
+
+
+
+
+
+
+.apreview .article {
+    margin-bottom: 1em;
+}
+
+ }
+@layer primary-footer.baseof      { 
+
+
+
+
+
+
+
+
+
+ }
+@layer zippy.baseof               { 
+
+
+
+
+.zippy .zippy-content::before {
+    left:           1rem;
+}
+
+
+
+
+
+
+ }
+@layer category-identifier.baseof { 
+
+
+
+
+
+
+
+
+
+ }
+@layer pagination.baseof          { 
+
+
+
+
+
+
+
+
+
+ }
+@layer bg.baseof                  { 
+
+
+
+
+
+
+
+
+
+ }
+
+
+
+
+
+
+
+
+
+@layer in-dev-cover.baseof        { 
+
+
+
+
+
+
+
+
+
+ }
