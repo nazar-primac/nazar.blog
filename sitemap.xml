@@ -4,15 +4,55 @@
   <url>
     <loc>//localhost:1313/tags/blue/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="http://localhost:1314/tags/blue/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/tags/blue/"
+                />
   </url><url>
     <loc>//localhost:1313/tags/green/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="http://localhost:1314/tags/green/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/tags/green/"
+                />
   </url><url>
     <loc>//localhost:1313/articles/post-3/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="http://localhost:1314/articles/post-3/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/articles/post-3/"
+                />
   </url><url>
     <loc>//localhost:1313/tags/red/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="http://localhost:1314/tags/red/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/tags/red/"
+                />
   </url><url>
     <loc>//localhost:1313/tags/</loc>
     <lastmod>2023-03-15T11:00:00-07:00</lastmod>
@@ -35,6 +75,19 @@
   </url><url>
     <loc>//localhost:1313/articles/</loc>
     <lastmod>2023-01-01T08:30:00-07:00</lastmod>
+    <xhtml:link
+                rel="alternate"
+                hreflang="de-DE"
+                href="http://localhost:1314/articles/"
+                />
+    <xhtml:link
+                rel="alternate"
+                hreflang="en"
+                href="//localhost:1313/articles/"
+                />
+  </url><url>
+    <loc>//localhost:1313/articles/business-and-marketing/</loc>
+    <lastmod>2023-01-01T08:00:00-07:00</lastmod>
   </url><url>
     <loc>//localhost:1313/</loc>
     <lastmod>2023-01-01T08:00:00-07:00</lastmod>

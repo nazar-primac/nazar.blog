@@ -7,12 +7,12 @@
     const tabletMediaQ = window.matchMedia("(min-width: 426px) and (max-width: 768px)");
     const desctopMediaQ = window.matchMedia("(min-width: 769px)");
     const pathname = window.location.pathname;
-    const sideNav = document.body.querySelector("nav.side-nav");
-    const menu = document.body.querySelector("menu.primary-menu");
+    const sideNav = document.body.querySelector(".side-nav");
+    const menu = document.body.querySelector(".primary-nav");
     const burger = document.body.querySelector(".burger");
     const container = document.body.querySelector(".container");
     const article = container.querySelector("article.article");
-    const primaryNav = menu.firstElementChild;
+    const primaryNav = document.body.querySelector(".primary-nav");
     const primaryNavZippies = primaryNav.querySelectorAll(".zippy");
     const articlesPreviews = container.querySelector("ul.alist");
     let previewSwitch;
@@ -141,22 +141,26 @@
         return;
       console.log("zippyUnfold()");
       const zippyOverflow = this.firstElementChild.nextElementSibling;
-      const zippyContent = zippyOverflow.firstElementChild;
-      if (zippyContent.style.marginTop != "0px") {
-        zippyOverflow.style.cssText = `z-index: -1;`;
-        zippyContent.style.cssText = `transition-delay: 0.11s;
-                                     margin-top: 0px;`;
+      if (zippyOverflow) {
+        const zippyContent = zippyOverflow.firstElementChild;
+        if (zippyContent.style.marginTop != "0px") {
+          zippyOverflow.style.cssText = `z-index: -1;`;
+          zippyContent.style.cssText = `transition-delay: 0.11s;
+                                       margin-top: 0px;`;
+        }
       }
       zippyUnfolded = true;
     }
     function zippyFold() {
       console.log("zippyFold()");
       const zippyOverflow = this.firstElementChild.nextElementSibling;
-      const zippyContent = zippyOverflow.firstElementChild;
-      if (zippyContent.style.marginTop == "0px") {
-        zippyOverflow.style.cssText = `z-index: -2;`;
-        zippyContent.style.cssText = `transition-delay: 0s;
-                                     margin-top: -${zippyContent.offsetHeightPlus}px;`;
+      if (zippyOverflow) {
+        const zippyContent = zippyOverflow.firstElementChild;
+        if (zippyContent.style.marginTop == "0px") {
+          zippyOverflow.style.cssText = `z-index: -2;`;
+          zippyContent.style.cssText = `transition-delay: 0s;
+                                       margin-top: -${zippyContent.offsetHeightPlus}px;`;
+        }
       }
       const zippyHeadAnchor = this.firstElementChild.querySelector("a");
       if (zippyHeadAnchor)
