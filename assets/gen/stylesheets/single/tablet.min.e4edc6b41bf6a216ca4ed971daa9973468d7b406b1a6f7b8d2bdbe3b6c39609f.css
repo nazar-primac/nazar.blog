@@ -1,0 +1,36 @@
+@layer defaults.single{}@layer components.single{}@layer aheader.single{}@layer article.single{.content
+    pre {
+        border-left-width: 2.8em !important;
+    }
+ }@layer pagination.single{}@layer PAGE-ABOUT.single{body.PAGE-ABOUT
+h1 {
+    display: none;
+}
+
+
+body.PAGE-ABOUT
+header > .bg-elem {
+    
+    background-color: hsl(0, 0%, 100%);
+
+    background-image: url(/assets/decorative/hero-background-pale-blue.png);
+
+    
+    background-position: 100% 40%;
+    
+    background-size: auto 110%;
+    background-repeat: no-repeat;
+}
+
+
+
+
+
+
+
+
+body.PAGE-ABOUT
+header > .bg-elem {
+    background-color: hsl(var(--decorative-theme-color), var(--decorative-background-body-transparency));
+}
+ }
